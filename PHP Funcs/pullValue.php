@@ -52,11 +52,11 @@ foreach($arr as $k => $v) {
     } else
     {
        // echo $k.': $'.$v;
-        if($k == "GOOG"){ $data1 = "\n".$k.': $'.$v; fwrite($handle1, $data1); }
-        if($k == "AAPL"){ $data2 = "\n".$k.': $'.$v; fwrite($handle2, $data2); }
-        if($k == "YHOO"){ $data3 = "\n".$k.': $'.$v; fwrite($handle3, $data3); }
-        if($k == "MSFT"){ $data4 = "\n".$k.': $'.$v; fwrite($handle4, $data4); }
-        if($k == "NVDA"){ $data5 = "\n".$k.': $'.$v; fwrite($handle5, $data5); }
+        if($k == "GOOG"){ $data1 = "\n".': $'.$v; fwrite($handle1, $data1); }
+        if($k == "AAPL"){ $data2 = "\n".': $'.$v; fwrite($handle2, $data2); }
+        if($k == "YHOO"){ $data3 = "\n".': $'.$v; fwrite($handle3, $data3); }
+        if($k == "MSFT"){ $data4 = "\n".': $'.$v; fwrite($handle4, $data4); }
+        if($k == "NVDA"){ $data5 = "\n".': $'.$v; fwrite($handle5, $data5); }
     }
 }
 //
