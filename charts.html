@@ -90,11 +90,11 @@
         <li class="color_4"> <a class="widgets"data-parent="#sidebar_menu" href="file_explorer.html"> <img src="img/menu_icons/explorer.png"><span>File Explorer</span> </a> </li>
         --><li class="accordion-group color_25"> <a class="accordion-toggle widgets collapsed" data-toggle="collapse" data-parent="#sidebar_menu" href="#collapse5"> <img src="img/menu_icons/others.png"><span>Specific Pages</span></a>
           <ul id="collapse5" class="accordion-body collapse">
-            <li><a href="profile.html">Profile</a></li>
+            <li><a href="#">Profile</a></li>
             <li><a href="search.html">Search</a></li>
-            <li><a href="index2.html">Login</a></li>
+            <li><a href="login.html">Login</a></li>
            <li><a href="404.html">404 Error</a></li>
-<li ><a href="blog.html">Blog</a></li>
+<li ><a href="#">Blog</a></li>
           </ul>
         </li>
       </ul>
@@ -157,9 +157,7 @@
       <div class="box paint">
         <div class="title">
           <div class="row-fluid">
-            <div class="span6">
-              <h2> <i class=" icon-bar-chart"></i> <span>Guess Chart</span> </h2>
-            </div>
+            
             <!-- End span6 --> 
             
           </div>
@@ -170,86 +168,15 @@
           <div id="placeholder2" style="width:100%;height:350px;"></div>
         </div>
       </div>
+        </div>
       <!-- End .row-fluid -->
       <div class="row-fluid">
-        <div class="span8">
-          <div class="box gradient">
-            <div class="title">
-              <h4> <i class="icon-globe"></i> <span>Bar chart</span> </h4>
-            </div>
-            <div class="content">
-              <div id="bar-chart" class="simple-chart" style="width:100%;height:250px;"></div>
-            </div>
-            <!-- End content --> 
-          </div>
-          <!-- End .box --> 
-        </div>
+        
         <!-- End .span6 -->
-        
-        <div class="span4">
-          <div class="box gradient">
+        <div class="span12">
+          <div class="box gradient" style="padding:0px;">
             <div class="title">
-              <h4> <i class="icon-eye-open"></i> <span>Pie Chart <span class="label label-success"><span class="icomoon-icon-arrow-up white"></span>+23,5%</span></span> </h4>
-            </div>
-            <div class="content">
-              <div id="donut" class="graph" style="width:100%;height:250px;"></div>
-            </div>
-          </div>
-          <!-- End .box --> 
-        </div>
-        <!-- End .span6 --> 
-        
-      </div>
-      <!-- End row-fluid -->
-      <div class="row-fluid">
-        <div class="span8">
-          <div class="box gradient">
-            <div class="title">
-              <h4> <i class="icon-globe"></i> <span>Line chart</span> </h4>
-            </div>
-            <div class="content">
-              <div id="line-chart" class="simple-chart" style="width:100%;height:250px;"></div>
-            </div>
-            <!-- End content --> 
-          </div>
-          <!-- End .box --> 
-        </div>
-        <!-- End .span8 -->
-        
-        <div class="span4">
-          <div class="box gradient">
-            <div class="title">
-              <h4> <i class="icon-globe"></i> <span>Spider Chart</span> </h4>
-            </div>
-            <div class="content">
-              <div id="spider" style="width:100%;height:250px;"></div>
-            </div>
-            <!-- End content --> 
-          </div>
-          <!-- End .box --> 
-        </div>
-        <!-- End .span8 --> 
-      </div>
-      <!-- End row-fluid -->
-      <div class="row-fluid">
-        <div class="span4">
-          <div class="box gradient">
-            <div class="title">
-              <h4> <i class="icon-globe"></i> <span>Donut chart</span> </h4>
-            </div>
-            <div class="content">
-              <div id="donut2" class="simple-chart123" style="width:100%;height:250px;"></div>
-            </div>
-            <!-- End content --> 
-          </div>
-          <!-- End .box --> 
-        </div>
-        <!-- End .span4 -->
-        
-        <div class="span8">
-          <div class="box gradient">
-            <div class="title">
-              <h4> <i class="icon-globe"></i> <span>Real Time Chart</span> </h4>
+              <h4> <i class="icon-globe"></i> <span>Real Time Chart Playback - Previous 5 days</span> </h4>
             </div>
             <div class="content">
               <div id="real-time" style="width:100%;height:250px;"></div>
@@ -261,6 +188,49 @@
         <!-- End .span8 --> 
       </div>
       <!-- End row-fluid --> 
+        
+        <div class="span4">
+          <div class="box gradient">
+          </div>
+          <!-- End .box --> 
+        </div>
+        <!-- End .span6 --> 
+        
+      </div>
+      <!-- End row-fluid -->
+      <!--<div class="row-fluid">
+        <div class="span8">
+          <div class="box gradient">
+            <div class="title">
+              <h4> <i class="icon-globe"></i> <span>Algorithm Execution Rate</span> </h4>
+            </div>
+            <div class="content">
+              <div id="line-chart" class="simple-chart" style="width:100%;height:250px;"></div>
+            </div>
+           
+          </div>
+        </div>-->
+        <!-- End .span8 -->
+        
+        <div class="span4">
+          <div class="box gradient">
+            <!-- End content --> 
+          </div>
+          <!-- End .box --> 
+        </div>
+        <!-- End .span8 --> 
+      </div>
+      <!-- End row-fluid -->
+      <div class="row-fluid">
+        <div class="span4">
+          <div class="box gradient">
+            <!-- End content --> 
+          </div>
+          <!-- End .box --> 
+        </div>
+        <!-- End .span4 -->
+        
+        
       
     </div>
     <!-- End #container --> 
@@ -302,7 +272,6 @@
   </div>
 </div>
 <!-- End .background_changer -->
-</div>
 <!-- /container --> 
 
 <!-- Le javascript
@@ -440,10 +409,17 @@ $(function () {
 
      });
     // Guess chart
-    var sin = [], cos = [], tes = [];
-    for (var i = 0; i < 14; i += 1) {
+        var sin = [], cos = [], tes = [];
+        //Predictor
+    for (var i = 0; i < 13; i += 1) {
         sin.push([i, Math.sin(i) * Math.cos(i)*(0.11 + Math.random()) * 1]);
-        cos.push([i, Math.sin(i)*Math.cos(i)*(0.1+Math.random())*1]);
+        //cos.push([i, Math.sin(i)*Math.cos(i)*(0.1+Math.random())*1]);
+        //tes.push([i, Math.cos(i) * Math.cos(i)*(0.1 + Math.random()) * 1]);
+    }
+        //Real Time percentage difference feed.
+    for (var i = 0; i < 14; i += 1) {
+        //sin.push([i, Math.sin(i) * Math.cos(i) * (0.11 + Math.random()) * 1]);
+        cos.push([i, Math.sin(i) * Math.cos(i) * (0.1 + Math.random()) * 1]);
         //tes.push([i, Math.cos(i) * Math.cos(i)*(0.1 + Math.random()) * 1]);
     }
     var plot = $.plot($("#placeholder2"),
@@ -453,7 +429,7 @@ $(function () {
                    points: { show: true, fill:true },
                },
                grid: { hoverable: true, clickable: true, autoHighlight: false, borderWidth:0, color: '#ffffff' },
-               yaxis: { min: -1.5, max: 1 },
+               yaxis: { min: -1, max: 1 },
              });
    function showTooltip(x, y, contents) {
             $('<div id="tooltip"><div class="date">14 Jul 2013<\/div><div class="title text_color_3">'+x/10+'%<\/div> <div class="description text_color_3">Accuracy<\/div><div class="title ">'+(x*12)/100+'<\/div><div class="description">Probability<\/div><\/div>').css( {
@@ -518,105 +494,105 @@ $(function () {
                grid: { hoverable: true, clickable: true, autoHighlight: false, borderWidth:0,  color: '#ffffff' },
              });
 });
-$(function () {
-  var data = [];
-  var series = Math.floor(Math.random()*5)+1;
-  data[0] = { data:42, color: "#cb4b4b" };
-  data[1] = {  data:27, color: "#4da74d"};
-  data[2] = {  data:9, color: "#edc240"};
-  data[3] = {  data:22, color: "#5e96ea"};
-  // Pie Chart
-    $.plot($("#donut"), data, 
-  {
-      series: {
-        pie: { 
-          label: {
-            show: true,
-            radius: 1,
-            formatter: function(label, series){
-                return '<div class="chart-label">'+label+'&nbsp;'+Math.round(series.percent)+'%</div>';
-            }
-          },
-          show: true,
-          radius:1,
-          highlight: {
-            opacity: 0.3
-          },
-          legend: {
-            show: false
-          },
-        }
-      }
-    });
-    // Donut Chart
-    $.plot($("#donut2"), data,
-    {
-            series: {
-            pie: { 
-              show: true,
-              innerRadius: 0.42,
-              highlight: {
-                opacity: 0.3
-              },
-              radius: 1,
-              stroke: {
-                color: '#fff',
-                width: 4
-              },
-              startAngle: 0,
-              combine: {
-                          color: '#353535',
-                          threshold: 0.05
-              },
-              label: {
-                          show: true,
-                          radius: 1,
-                          formatter: function(label, series){
-                              return '<div class="chart-label">'+label+'&nbsp;'+Math.round(series.percent)+'%</div>';
-                          }
-                      }
-              },
-              grow: { active: false}
-              },
-              legend:{show:true},
-              grid: {
-                      hoverable: true,
-                      clickable: true
-              },
-    });
-});
-   // Spider chart
-      var p1,p2,data,options;
-      $(function () {
-          var d1 = [ [0,10], [1,20], [2,80], [3,70], [4,60] ];
-              var d2 = [ [0,30], [1,25], [2,50], [3,60], [4,95] ];
-              var d3 = [ [0,50], [1,40], [2,60], [3,95], [4,30] ];
-              options = { series:
-                                  { spider:
-                                              { active: true
-                           ,highlight: {mode: "area"}
-                           ,legs: { data: [{label: "Scaling"}
-                                            ,{label: "Stability"}
-                                            ,{label: "Accuracy"}
-                                            ,{label: "Flexibility"}
-                                            ,{label: "Quality"}
-                                          ]
-                                          , legScaleMax: 1, legScaleMin:0.8}
-                           ,spiderSize: 0.9 }
-                          }
-                         ,grid:
-                                          { hoverable: true
-                                               ,clickable: true
-                                               ,tickColor: "rgba(0,0,0,0.2)"
-                                               ,mode: "radar"
-                                              }
-                        };
-              data = [ {   data: d1, spider: {show: true, color: "#cb4b4b"} }
-                      ,{    data: d2, spider: {show: true, color: "#a1d14d"} }
-                      ,{     data: d3, spider: {show: true,  color: "#5e96ea"} }
-                     ];
-          p1 = $.plot($("#spider"), data , options);
-      });
+//$(function () {
+//  var data = [];
+//  var series = Math.floor(Math.random()*5)+1;
+//  data[0] = { data:42, color: "#cb4b4b" };
+//  data[1] = {  data:27, color: "#4da74d"};
+//  data[2] = {  data:9, color: "#edc240"};
+//  data[3] = {  data:22, color: "#5e96ea"};
+//  // Pie Chart
+//  //  $.plot($("#donut"), data, 
+//  //{
+//  //    series: {
+//  //      pie: { 
+//  //        label: {
+//  //          show: true,
+//  //          radius: 1,
+//  //          formatter: function(label, series){
+//  //              return '<div class="chart-label">'+label+'&nbsp;'+Math.round(series.percent)+'%</div>';
+//  //          }
+//  //        },
+//  //        show: true,
+//  //        radius:1,
+//  //        highlight: {
+//  //          opacity: 0.3
+//  //        },
+//  //        legend: {
+//  //          show: false
+//  //        },
+//  //      }
+//  //    }
+//  //  });
+//    // Donut Chart
+////    $.plot($("#donut2"), data,
+////    {
+////            series: {
+////            pie: { 
+////              show: true,
+////              innerRadius: 0.42,
+////              highlight: {
+////                opacity: 0.3
+////              },
+////              radius: 1,
+////              stroke: {
+////                color: '#fff',
+////                width: 4
+////              },
+////              startAngle: 0,
+////              combine: {
+////                          color: '#353535',
+////                          threshold: 0.05
+////              },
+////              label: {
+////                          show: true,
+////                          radius: 1,
+////                          formatter: function(label, series){
+////                              return '<div class="chart-label">'+label+'&nbsp;'+Math.round(series.percent)+'%</div>';
+////                          }
+////                      }
+////              },
+////              grow: { active: false}
+////              },
+////              legend:{show:true},
+////              grid: {
+////                      hoverable: true,
+////                      clickable: true
+////              },
+////    });
+////});
+//   // Spider chart
+//      var p1,p2,data,options;
+//      $(function () {
+//          var d1 = [ [0,10], [1,20], [2,80], [3,70], [4,60] ];
+//              var d2 = [ [0,30], [1,25], [2,50], [3,60], [4,95] ];
+//              var d3 = [ [0,50], [1,40], [2,60], [3,95], [4,30] ];
+//              options = { series:
+//                                  { spider:
+//                                              { active: true
+//                           ,highlight: {mode: "area"}
+//                           ,legs: { data: [{label: "Scaling"}
+//                                            ,{label: "Stability"}
+//                                            ,{label: "Accuracy"}
+//                                            ,{label: "Flexibility"}
+//                                            ,{label: "Quality"}
+//                                          ]
+//                                          , legScaleMax: 1, legScaleMin:0.8}
+//                           ,spiderSize: 0.9 }
+//                          }
+//                         ,grid:
+//                                          { hoverable: true
+//                                               ,clickable: true
+//                                               ,tickColor: "rgba(0,0,0,0.2)"
+//                                               ,mode: "radar"
+//                                              }
+//                        };
+//              data = [ {   data: d1, spider: {show: true, color: "#cb4b4b"} }
+//                      ,{    data: d2, spider: {show: true, color: "#a1d14d"} }
+//                      ,{     data: d3, spider: {show: true,  color: "#5e96ea"} }
+//                     ];
+//          p1 = $.plot($("#spider"), data , options);
+//      });
 </script> 
 <script type="text/javascript">
   /**** Specific JS for this page ****/
