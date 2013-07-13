@@ -1,0 +1,7 @@
+{
+  "name": "pure",
+  "version": "0.2.1-pre",
+  "devDependencies": {
+    "normalize-css": "1.x"
+  }
+}

@@ -164,7 +164,8 @@
     border-right-color: #0044cc;
     border-top-color: #0044cc;
     border-bottom-color: #002a80;
-}.datepicker td span.active:hover,.datepicker td span.active:active,.datepicker td span.active.active,.datepicker td span.active.disabled,.datepicker td span.active[disabled]{background-color:#0044cc}.datepicker td span.active:active,.datepicker td span.active.active{background-color:#003399 \9}.datepicker td span.old{color:#999999}.datepicker th.switch{width:145px}.datepicker thead tr:first-child th{cursor:pointer}.datepicker thead tr:first-child th:hover{background:#eeeeee}.input-append.date .add-on i,.input-prepend.date .add-on i{display:block;cursor:pointer;width:16px;height:16px}/*
+}.datepicker td span.active:hover,.datepicker td span.active:active,.datepicker td span.active.active,.datepicker td span.active.disabled,.datepicker td span.active[disabled]{background-color:#0044cc}.datepicker td span.active:active,.datepicker td span.active.active{background-color:#003399 \9}.datepicker td span.old{color:#999999}.datepicker th.switch{width:145px}.datepicker thead tr:first-child th{cursor:pointer}.datepicker thead tr:first-child th:hover{background:#eeeeee}.input-append.date .add-on i,.input-prepend.date .add-on i{display:block;cursor:pointer;width:16px;height:16px}
+/*
 * Colorpicker for Bootstrap
 *
 * Copyright 2012 Stefan Petre
