@@ -1,6 +1,8 @@
 <?php
+
 define('BASE_URL_', 'http://download.finance.yahoo.com/d/quotes.csv?s=');
 define('HISTORICAL_URL_', 'http://ichart.yahoo.com/table.csv?s=');
+//define('Change_In_Percentage','http://ichart.yahoo.com/table.csv?s=c0')
 define('STATIC_END_', '&e=.csv');
 define('STATIC_HISTORICAL_', '&ignore=.csv');
 
@@ -105,6 +107,7 @@ class YahooFinance {
       Year Range	    		w0
 
      */
+   
     static function retrieveCurrentPrice($stock) {
         $url = BASE_URL_;
         if (is_array($stock)) {
@@ -131,9 +134,10 @@ class YahooFinance {
         while($line = fgets($file)) {
             if(!is_array($stock)) {
                 $stockarray[$stock]=trim($line);
-            } else {
-                $stockarray[$stock[$i]]=trim($line);
-            }
+            } else 
+                {
+                    $stockarray[$stock[$i]]=trim($line);
+                }
             $i++;
             $stockarray['filesize'] += strlen($line);
         }
@@ -215,7 +219,7 @@ class YahooFinance {
 
 //parse each line and place into array $one
         while (($buffer = fgets($handle, 5120)) !== false) {
-            if (!preg_match('/([0-9\-]{10})[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)\s?/', $buffer, $one))
+            if (!preg_match('/([0-9\-]{10})[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)[\,]{1}([0-9\.]+)\s?/\n', $buffer, $one))
                 return false;
             $one = array_combine($keys, array_values($one)); //rekeying
             $arr[] = $one;
@@ -408,6 +412,5 @@ class YahooFinance {
     }
 
 }
-
 
 ?>
