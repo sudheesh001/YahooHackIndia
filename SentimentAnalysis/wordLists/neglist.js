@@ -1,12 +1,3 @@
-var neg5 = ['bastard','bastards','bitch','bitches','cock','cocksucker','cocksuckers','cunt',
-'motherfucker','motherfucking','niggas','nigger','prick','slut','son-of-a-bitch','twat'];
-
-var neg4 = ['ass','assfucking','asshole','bullshit','catastrophic','damn','damned','damnit','dick',
-'dickhead','fraud','frauds','fraudster','fraudsters','fraudulence','fraudulent','fuck','fucked',
-'fucker','fuckers','fuckface','fuckhead','fucking','fucktard','fuked','fuking','hell','jackass',
-'jackasses','piss','pissed','rape','rapist','scumbag','shit','shithead','shrew','torture','tortured',
-'tortures','torturing','whore','wtf'];
-
 var neg3 = ['abhor','abhorred','abhorrent','abhors','abuse','abused','abuses','abusive',
 'acrimonious','agonise','agonised','agonises','agonising','agonize','agonized','agonizes',
 'agonizing','anger','angers','angry','anguish','anguished','apathetic','apathy','apeshit',

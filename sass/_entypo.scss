@@ -1,0 +1,338 @@
+/*  Entypo
+  
+
+    */
+
+@import "compass/css3/font-face";
+$EntypoPath: "../../sass/font/entypo" !default;
+@include font-face(
+    "entypo",
+    font-files(
+        "#{$EntypoPath}.woff", woff,
+        "#{$EntypoPath}.ttf", truetype,
+        "#{$EntypoPath}.svg#Entypo", svg),
+    '#{$EntypoPath}.eot',
+    normal,
+    normal);
+
+/*  Font Awesome styles
+    ------------------------------------------------------- */
+
+  .pictogram {
+  font-family: "entypo";
+  line-height: 34px;
+  color: #fff;
+  font-size: 34px;
+  width:22px;
+  text-align: center;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &.big {
+    margin-right: 30px;
+    font-family: "entypo";
+    line-height: 1;
+    color: #fff;
+    font-size: 10em;
+    text-align: center;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
+
+// [class^="eicon-"]:before,
+// [class*="eicon-"]:before,
+// .eicon:before, .eicon:after {
+//   font-family: Entypo;
+//   font-weight: normal;
+//   font-style: normal;
+//   display: inline-block;
+//   text-decoration: inherit;
+// }
+
+// a [class^="eicon-"],
+// a [class*="eicon-"] {
+//   display: inline-block;
+//   text-decoration: inherit;
+// }
+
+// /* makes the font 33% larger relative to the eicon container */
+// .eicon-large:before {
+//   vertical-align: middle;
+//   font-size: 4/3em;
+// }
+
+// .btn, .nav-tabs {
+//   [class^="eicon-"],
+//   [class*=" eicon-"] {
+//   /* keeps button heights with and without eicons the same */
+//     line-height: .9em;
+//   }
+// }
+
+// li {
+//   [class^="eicon-"],
+//   [class*=" eicon-"] {
+//     display: inline-block;
+//     width: 1.25em;
+//     text-align: center;
+//   }
+//   .eicon-large:before,
+//   .eicon-large:before {
+//     /* 1.5 increased font size for eicon-large * 1.25 width */
+//     width: 1.5*1.25em;
+//   }
+// }
+
+// ul.eicons {
+//   list-style-type: none;
+//   margin-left: 2em;
+//   text-indent: -.8em;
+
+//   li {
+//     [class^="eicon-"],
+//     [class*=" eicon-"] {
+//       width: .8em;
+//     }
+//     .eicon-large:before,
+//     .eicon-large:before {
+//       /* 1.5 increased font size for eicon-large * 1.25 width */
+//       vertical-align: initial;
+// //      width: 1.5*1.25em;
+//     }
+//   }
+// }
+
+// /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+//     readers do not read off random characters that represent eicons */
+// .eicon-glass:before                { content: "/U+1F4DE"; }
+// .eicon-music:before                { content: "\f001"; }
+// .eicon-search:before               { content: "\f002"; }
+// .eicon-envelope:before             { content: "\f003"; }
+// .eicon-heart:before                { content: "\f004"; }
+// .eicon-star:before                 { content: "\f005"; }
+// .eicon-star-empty:before           { content: "\f006"; }
+// .eicon-user:before                 { content: "\f007"; }
+// .eicon-film:before                 { content: "\f008"; }
+// .eicon-th-large:before             { content: "\f009"; }
+// .eicon-th:before                   { content: "\f00a"; }
+// .eicon-th-list:before              { content: "\f00b"; }
+// .eicon-ok:before                   { content: "\f00c"; }
+// .eicon-remove:before               { content: "\f00d"; }
+// .eicon-zoom-in:before              { content: "\f00e"; }
+
+// .eicon-zoom-out:before             { content: "\f010"; }
+// .eicon-off:before                  { content: "\f011"; }
+// .eicon-signal:before               { content: "\f012"; }
+// .eicon-cog:before                  { content: "\f013"; }
+// .eicon-trash:before                { content: "\f014"; }
+// .eicon-home:before                 { content: "\f015"; }
+// .eicon-file:before                 { content: "\f016"; }
+// .eicon-time:before                 { content: "\f017"; }
+// .eicon-road:before                 { content: "\f018"; }
+// .eicon-download-alt:before         { content: "\f019"; }
+// .eicon-download:before             { content: "\f01a"; }
+// .eicon-upload:before               { content: "\f01b"; }
+// .eicon-inbox:before                { content: "\f01c"; }
+// .eicon-play-circle:before          { content: "\f01d"; }
+// .eicon-repeat:before               { content: "\f01e"; }
+
+// /* \f020 doesn't work in Safari. all shifted one down */
+// .eicon-refresh:before              { content: "\f021"; }
+// .eicon-list-alt:before             { content: "\f022"; }
+// .eicon-lock:before                 { content: "\f023"; }
+// .eicon-flag:before                 { content: "\f024"; }
+// .eicon-headphones:before           { content: "\f025"; }
+// .eicon-volume-off:before           { content: "\f026"; }
+// .eicon-volume-down:before          { content: "\f027"; }
+// .eicon-volume-up:before            { content: "\f028"; }
+// .eicon-qrcode:before               { content: "\f029"; }
+// .eicon-barcode:before              { content: "\f02a"; }
+// .eicon-tag:before                  { content: "\f02b"; }
+// .eicon-tags:before                 { content: "\f02c"; }
+// .eicon-book:before                 { content: "\f02d"; }
+// .eicon-bookmark:before             { content: "\f02e"; }
+// .eicon-print:before                { content: "\f02f"; }
+
+// .eicon-camera:before               { content: "\f030"; }
+// .eicon-font:before                 { content: "\f031"; }
+// .eicon-bold:before                 { content: "\f032"; }
+// .eicon-italic:before               { content: "\f033"; }
+// .eicon-text-height:before          { content: "\f034"; }
+// .eicon-text-width:before           { content: "\f035"; }
+// .eicon-align-left:before           { content: "\f036"; }
+// .eicon-align-center:before         { content: "\f037"; }
+// .eicon-align-right:before          { content: "\f038"; }
+// .eicon-align-justify:before        { content: "\f039"; }
+// .eicon-list:before                 { content: "\f03a"; }
+// .eicon-indent-left:before          { content: "\f03b"; }
+// .eicon-indent-right:before         { content: "\f03c"; }
+// .eicon-facetime-video:before       { content: "\f03d"; }
+// .eicon-picture:before              { content: "\f03e"; }
+
+// .eicon-pencil:before               { content: "\f040"; }
+// .eicon-map-marker:before           { content: "\f041"; }
+// .eicon-adjust:before               { content: "\f042"; }
+// .eicon-tint:before                 { content: "\f043"; }
+// .eicon-edit:before                 { content: "\f044"; }
+// .eicon-share:before                { content: "\f045"; }
+// .eicon-check:before                { content: "\f046"; }
+// .eicon-move:before                 { content: "\f047"; }
+// .eicon-step-backward:before        { content: "\f048"; }
+// .eicon-fast-backward:before        { content: "\f049"; }
+// .eicon-backward:before             { content: "\f04a"; }
+// .eicon-play:before                 { content: "\f04b"; }
+// .eicon-pause:before                { content: "\f04c"; }
+// .eicon-stop:before                 { content: "\f04d"; }
+// .eicon-forward:before              { content: "\f04e"; }
+
+// .eicon-fast-forward:before         { content: "\f050"; }
+// .eicon-step-forward:before         { content: "\f051"; }
+// .eicon-eject:before                { content: "\f052"; }
+// .eicon-chevron-left:before         { content: "\f053"; }
+// .eicon-chevron-right:before        { content: "\f054"; }
+// .eicon-plus-sign:before            { content: "\f055"; }
+// .eicon-minus-sign:before           { content: "\f056"; }
+// .eicon-remove-sign:before          { content: "\f057"; }
+// .eicon-ok-sign:before              { content: "\f058"; }
+// .eicon-question-sign:before        { content: "\f059"; }
+// .eicon-info-sign:before            { content: "\f05a"; }
+// .eicon-screenshot:before           { content: "\f05b"; }
+// .eicon-remove-circle:before        { content: "\f05c"; }
+// .eicon-ok-circle:before            { content: "\f05d"; }
+// .eicon-ban-circle:before           { content: "\f05e"; }
+
+// .eicon-arrow-left:before           { content: "\f060"; }
+// .eicon-arrow-right:before          { content: "\f061"; }
+// .eicon-arrow-up:before             { content: "\f062"; }
+// .eicon-arrow-down:before           { content: "\f063"; }
+// .eicon-share-alt:before            { content: "\f064"; }
+// .eicon-resize-full:before          { content: "\f065"; }
+// .eicon-resize-small:before         { content: "\f066"; }
+// .eicon-plus:before                 { content: "\f067"; }
+// .eicon-minus:before                { content: "\f068"; }
+// .eicon-asterisk:before             { content: "\f069"; }
+// .eicon-exclamation-sign:before     { content: "\f06a"; }
+// .eicon-gift:before                 { content: "\f06b"; }
+// .eicon-leaf:before                 { content: "\f06c"; }
+// .eicon-fire:before                 { content: "\f06d"; }
+// .eicon-eye-open:before             { content: "\f06e"; }
+
+// .eicon-eye-close:before            { content: "\f070"; }
+// .eicon-warning-sign:before         { content: "\f071"; }
+// .eicon-plane:before                { content: "\f072"; }
+// .eicon-calendar:before             { content: "\f073"; }
+// .eicon-random:before               { content: "\f074"; }
+// .eicon-comment:before              { content: "\f075"; }
+// .eicon-magnet:before               { content: "\f076"; }
+// .eicon-chevron-up:before           { content: "\f077"; }
+// .eicon-chevron-down:before         { content: "\f078"; }
+// .eicon-retweet:before              { content: "\f079"; }
+// .eicon-shopping-cart:before        { content: "\f07a"; }
+// .eicon-folder-close:before         { content: "\f07b"; }
+// .eicon-folder-open:before          { content: "\f07c"; }
+// .eicon-resize-vertical:before      { content: "\f07d"; }
+// .eicon-resize-horizontal:before    { content: "\f07e"; }
+
+// .eicon-bar-chart:before            { content: "\f080"; }
+// .eicon-twitter-sign:before         { content: "\f081"; }
+// .eicon-facebook-sign:before        { content: "\f082"; }
+// .eicon-camera-retro:before         { content: "\f083"; }
+// .eicon-key:before                  { content: "\f084"; }
+// .eicon-cogs:before                 { content: "\f085"; }
+// .eicon-comments:before             { content: "\f086"; }
+// .eicon-thumbs-up:before            { content: "\f087"; }
+// .eicon-thumbs-down:before          { content: "\f088"; }
+// .eicon-star-half:before            { content: "\f089"; }
+// .eicon-heart-empty:before          { content: "\f08a"; }
+// .eicon-signout:before              { content: "\f08b"; }
+// .eicon-linkedin-sign:before        { content: "\f08c"; }
+// .eicon-pushpin:before              { content: "\f08d"; }
+// .eicon-external-link:before        { content: "\f08e"; }
+
+// .eicon-signin:before               { content: "\f090"; }
+// .eicon-trophy:before               { content: "\f091"; }
+// .eicon-github-sign:before          { content: "\f092"; }
+// .eicon-upload-alt:before           { content: "\f093"; }
+// .eicon-lemon:before                { content: "\f094"; }
+// .eicon-phone:before                { content: "\f095"; }
+// .eicon-check-empty:before          { content: "\f096"; }
+// .eicon-bookmark-empty:before       { content: "\f097"; }
+// .eicon-phone-sign:before           { content: "\f098"; }
+// .eicon-twitter:before              { content: "\f099"; }
+// .eicon-facebook:before             { content: "\f09a"; }
+// .eicon-github:before               { content: "\f09b"; }
+// .eicon-unlock:before               { content: "\f09c"; }
+// .eicon-credit-card:before          { content: "\f09d"; }
+// .eicon-rss:before                  { content: "\f09e"; }
+
+// .eicon-hdd:before                  { content: "\f0a0"; }
+// .eicon-bullhorn:before             { content: "\f0a1"; }
+// .eicon-bell:before                 { content: "\f0a2"; }
+// .eicon-certificate:before          { content: "\f0a3"; }
+// .eicon-hand-right:before           { content: "\f0a4"; }
+// .eicon-hand-left:before            { content: "\f0a5"; }
+// .eicon-hand-up:before              { content: "\f0a6"; }
+// .eicon-hand-down:before            { content: "\f0a7"; }
+// .eicon-circle-arrow-left:before    { content: "\f0a8"; }
+// .eicon-circle-arrow-right:before   { content: "\f0a9"; }
+// .eicon-circle-arrow-up:before      { content: "\f0aa"; }
+// .eicon-circle-arrow-down:before    { content: "\f0ab"; }
+// .eicon-globe:before                { content: "\f0ac"; }
+// .eicon-wrench:before               { content: "\f0ad"; }
+// .eicon-tasks:before                { content: "\f0ae"; }
+
+// .eicon-filter:before               { content: "\f0b0"; }
+// .eicon-briefcase:before            { content: "\f0b1"; }
+// .eicon-fullscreen:before           { content: "\f0b2"; }
+
+// .eicon-group:before                { content: "\f0c0"; }
+// .eicon-link:before                 { content: "\f0c1"; }
+// .eicon-cloud:before                { content: "\f0c2"; }
+// .eicon-beaker:before               { content: "\f0c3"; }
+// .eicon-cut:before                  { content: "\f0c4"; }
+// .eicon-copy:before                 { content: "\f0c5"; }
+// .eicon-paper-clip:before           { content: "\f0c6"; }
+// .eicon-save:before                 { content: "\f0c7"; }
+// .eicon-sign-blank:before           { content: "\f0c8"; }
+// .eicon-reorder:before              { content: "\f0c9"; }
+// .eicon-list-ul:before              { content: "\f0ca"; }
+// .eicon-list-ol:before              { content: "\f0cb"; }
+// .eicon-strikethrough:before        { content: "\f0cc"; }
+// .eicon-underline:before            { content: "\f0cd"; }
+// .eicon-table:before                { content: "\f0ce"; }
+
+// .eicon-magic:before                { content: "\f0d0"; }
+// .eicon-truck:before                { content: "\f0d1"; }
+// .eicon-pinterest:before            { content: "\f0d2"; }
+// .eicon-pinterest-sign:before       { content: "\f0d3"; }
+// .eicon-google-plus-sign:before     { content: "\f0d4"; }
+// .eicon-google-plus:before          { content: "\f0d5"; }
+// .eicon-money:before                { content: "\f0d6"; }
+// .eicon-caret-down:before           { content: "\f0d7"; }
+// .eicon-caret-up:before             { content: "\f0d8"; }
+// .eicon-caret-left:before           { content: "\f0d9"; }
+// .eicon-caret-right:before          { content: "\f0da"; }
+// .eicon-columns:before              { content: "\f0db"; }
+// .eicon-sort:before                 { content: "\f0dc"; }
+// .eicon-sort-down:before            { content: "\f0dd"; }
+// .eicon-sort-up:before              { content: "\f0de"; }
+
+// .eicon-envelope-alt:before         { content: "\f0e0"; }
+// .eicon-linkedin:before             { content: "\f0e1"; }
+// .eicon-undo:before                 { content: "\f0e2"; }
+// .eicon-legal:before                { content: "\f0e3"; }
+// .eicon-dashboard:before            { content: "\f0e4"; }
+// .eicon-comment-alt:before          { content: "\f0e5"; }
+// .eicon-comments-alt:before         { content: "\f0e6"; }
+// .eicon-bolt:before                 { content: "\f0e7"; }
+// .eicon-sitemap:before              { content: "\f0e8"; }
+// .eicon-umbrella:before             { content: "\f0e9"; }
+// .eicon-paste:before                { content: "\f0ea"; }
+
+// .eicon-user-md:before              { content: "\f200"; }
