@@ -178,8 +178,9 @@ span.rss-item
     padding:top;
 }
 a.rss-item{
-    font-weight:bold;
+    font-weight:normal;
     padding-top: 5px;
+    color:cornflowerblue;
 }
 /*
 * Colorpicker for Bootstrap
